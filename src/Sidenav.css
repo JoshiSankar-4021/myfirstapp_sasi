@@ -1,0 +1,16 @@
+.sidenavdiv{
+    text-align: left;
+    border:2px solid white;
+    width:200px;
+}
+
+.sidelinkdiv{
+border:2px solid white;
+margin:10px;
+
+}
+.sidenavlink{
+text-decoration: none;
+color:red
+
+}
