@@ -26,6 +26,10 @@ function Sidenav(){
             <div className="sidelinkdiv">
                 <NavLink to="/forms" className="sidenavlink">Forms</NavLink>
             </div>
+
+            <div className="sidelinkdiv">
+                <NavLink to="/render" className="sidenavlink">Render</NavLink>
+            </div>
             
         </div>
     )

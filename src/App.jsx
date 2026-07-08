@@ -6,6 +6,7 @@ import Linktag from "./Linktag"
 import Buttonnav from "./Buttonnav";
 import Sidenav from "./Sidenav"
 import Forms from "./Forms";
+import Render from "./Render.jsx"
 function App(){
   return(
    <>
@@ -17,6 +18,7 @@ function App(){
       <Route path="/linktag" element={<Linktag/>}/>
       <Route path="/" element={<Buttonnav/>}/>
       <Route path="/forms" element={<Forms/>}/>
+      <Route path="/render" element={<Render/>}/>
     </Routes>
    </>
   )
