@@ -54,6 +54,21 @@ function Render(){
                     )
                 }
             </table>
+
+
+
+                <h1>Card</h1>
+                <div style={{
+                    "border":"2px solid red",
+                    "borderRadius":"10px",
+                    "height":"200px",
+                    "width":"200px",
+                    "backgroundColor":"AccentColor"
+
+                }}>
+                    <h1> card </h1>
+                </div>
+
         </div>
     );
 }
