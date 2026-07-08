@@ -19,6 +19,7 @@ function Render(){
   ];
     return(
         <div>
+            <h1>List Rendering</h1>
             <ol>
                 {
                     products.map(
@@ -31,6 +32,28 @@ function Render(){
                     )
                 }
             </ol>
+
+            <h1>Table Rendering </h1>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                </tr>
+
+                {
+                    products.map(
+                       (product)=>(
+                            <tr key={product.id}>
+                                <td>{product.id}</td>
+                                <td>{product.name}</td>
+                                <td>{product.price}</td>
+                            </tr>
+    
+                       )
+                    )
+                }
+            </table>
         </div>
     );
 }
