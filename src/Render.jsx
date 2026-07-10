@@ -23,9 +23,9 @@ const [ddata,setDdata]=useState([])
 
   useEffect(()=>{
 
-    fetch("http://localhost:3002/getroutes/allusers")
+    fetch("http://localhost:3003/post1/getusers")
     .then(res=>res.json())
-    .ten(data=>setDdata(data))
+    .then(data=>setDdata(data))
     .catch(err=>console.log(err))
 
   },[])
@@ -88,8 +88,20 @@ const [ddata,setDdata]=useState([])
 
                 <h1>Dynamic Rendering</h1>
 
-
-
+                <h1>List Rendering</h1>
+                <ol>
+                    {
+                        ddata.map(
+                            (dd)=>(
+                                <li key={dd._id}>
+                                    {dd.name},
+                                    {dd.age},
+                                    {dd.email}
+                                </li>
+                            )
+                        )
+                    }
+                </ol>
 
         </div>
     );
