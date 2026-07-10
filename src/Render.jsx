@@ -1,3 +1,4 @@
+import { useEffect,useState } from "react";
 function Render(){
     const products = [
     { id: 1, name: "Nike Shoes", price: 2999 },
@@ -17,6 +18,22 @@ function Render(){
     { id: 15, name: "Converse Sneakers", price: 2499 },
     { id: 16, name: "Converse Sneakers", price: 2499 }
   ];
+
+const [ddata,setDdata]=useState([])
+
+  useEffect(()=>{
+
+    fetch("http://localhost:3002/getroutes/allusers")
+    .then(res=>res.json())
+    .ten(data=>setDdata(data))
+    .catch(err=>console.log(err))
+
+  },[])
+
+  useEffect(()=>{
+    console.log(ddata)
+  },[ddata])
+  
     return(
         <div>
             <h1>List Rendering</h1>
@@ -68,6 +85,11 @@ function Render(){
                 }}>
                     <h1> card </h1>
                 </div>
+
+                <h1>Dynamic Rendering</h1>
+
+
+
 
         </div>
     );
