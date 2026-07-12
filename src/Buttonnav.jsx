@@ -5,7 +5,7 @@ function Buttonnav(){
         <div>
             <button onClick={()=>{
                 navigate("/media")
-            }}>Media</button>
+            }}>Media </button>
         </div>
     );
 }
