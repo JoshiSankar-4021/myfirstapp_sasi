@@ -23,7 +23,7 @@ const [ddata,setDdata]=useState([])
 
   useEffect(()=>{
 
-    fetch("http://localhost:3003/post1/getusers")
+    fetch("https://nodetest-n5m8.onrender.com/post1/getusers")
     .then(res=>res.json())
     .then(data=>setDdata(data))
     .catch(err=>console.log(err))

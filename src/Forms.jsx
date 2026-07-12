@@ -21,7 +21,7 @@ function Forms() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3003/post1/user/add", {
+      const res = await fetch("https://nodetest-n5m8.onrender.com/post1/user/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
